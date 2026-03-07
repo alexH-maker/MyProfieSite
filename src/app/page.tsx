@@ -19,14 +19,14 @@ export default function Home() {
           
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
-              你好，我是张三
+              你好，我是黄海宁
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
-              全栈开发工程师 / 技术爱好者 / 开源贡献者
+              机器人视觉工程师 / 技术爱好者 / 视觉工程应用
             </p>
             <div className="flex items-center justify-center gap-2 text-muted-foreground">
               <MapPin className="w-4 h-4" />
-              <span>北京，中国</span>
+              <span>上海杨浦，中国</span>
             </div>
           </div>
 
@@ -63,7 +63,7 @@ export default function Home() {
           </CardHeader>
           <CardContent className="text-muted-foreground space-y-4 text-base leading-relaxed">
             <p>
-              我是一名充满激情的全栈开发工程师，拥有5年的软件开发经验。专注于构建高性能、用户友好的Web应用程序。
+              我是一名充满激情的视觉工程师，拥有5年的视觉开发经验。专注于构建高性能、沉浸式的视觉体验与实时渲染应用。
             </p>
             <p>
               我热爱技术，喜欢探索新的技术栈和工具。在工作中，我注重代码质量和用户体验，致力于交付高质量的软件产品。
@@ -80,60 +80,75 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">技术栈</h2>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* Frontend */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {/* 工业相机与硬件 */}
             <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-xl flex items-center gap-2">
-                  <span className="text-2xl">🎨</span> 前端开发
+                  <span className="text-2xl">📷</span> 工业相机与硬件
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">React</Badge>
-                  <Badge variant="secondary">Vue.js</Badge>
-                  <Badge variant="secondary">Next.js</Badge>
-                  <Badge variant="secondary">TypeScript</Badge>
-                  <Badge variant="secondary">Tailwind CSS</Badge>
-                  <Badge variant="secondary">Redux</Badge>
+                  <Badge variant="secondary">2D工业相机</Badge>
+                  <Badge variant="secondary">3D视觉相机</Badge>
+                  <Badge variant="secondary">智能相机</Badge>
+                  <Badge variant="secondary">运动控制</Badge>
+                  <Badge variant="secondary">光源控制器</Badge>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Backend */}
+            {/* 视觉软件与平台 */}
             <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-xl flex items-center gap-2">
-                  <span className="text-2xl">⚙️</span> 后端开发
+                  <span className="text-2xl">🔧</span> 视觉软件与平台
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Node.js</Badge>
+                  <Badge variant="secondary">智能视觉软件Cognex VisionPro</Badge>
+                  <Badge variant="secondary">深度学习平台Cognex Deep Learning</Badge>
+                  <Badge variant="secondary">传统算法库OpenCV</Badge>
+                  <Badge variant="secondary">机器人通讯ROS</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* 编程与开发 */}
+            <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
+              <CardHeader>
+                <CardTitle className="text-xl flex items-center gap-2">
+                  <span className="text-2xl">💻</span> 编程与开发
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="flex flex-wrap gap-2">
+                  <Badge variant="secondary">C++</Badge>
+                  <Badge variant="secondary">C#</Badge>
                   <Badge variant="secondary">Python</Badge>
-                  <Badge variant="secondary">Express</Badge>
-                  <Badge variant="secondary">FastAPI</Badge>
-                  <Badge variant="secondary">PostgreSQL</Badge>
-                  <Badge variant="secondary">MongoDB</Badge>
+                  <Badge variant="secondary">Mech-Eye API</Badge>
+                  <Badge variant="secondary">Qt</Badge>
+                  <Badge variant="secondary">TCP/IP</Badge>
+                  <Badge variant="secondary">Modbus</Badge>
                 </div>
               </CardContent>
             </Card>
 
-            {/* Tools & Others */}
+            {/* 标定与工具 */}
             <Card className="border-none shadow-md hover:shadow-lg transition-shadow">
               <CardHeader>
                 <CardTitle className="text-xl flex items-center gap-2">
-                  <span className="text-2xl">🛠️</span> 工具 & 其他
+                  <span className="text-2xl">🛠️</span> 标定与工具
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="secondary">Git</Badge>
-                  <Badge variant="secondary">Docker</Badge>
-                  <Badge variant="secondary">AWS</Badge>
-                  <Badge variant="secondary">CI/CD</Badge>
-                  <Badge variant="secondary">Linux</Badge>
-                  <Badge variant="secondary">Nginx</Badge>
+                  <Badge variant="secondary">手眼标定</Badge>
+                  <Badge variant="secondary">棋盘格标定</Badge>
+                  <Badge variant="secondary">圆点标定板</Badge>
+                  <Badge variant="secondary">球棒标定</Badge>
                 </div>
               </CardContent>
             </Card>
@@ -150,18 +165,20 @@ export default function Home() {
             {/* Project 1 */}
             <Card className="border-none shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader>
-                <CardTitle className="text-xl">电商平台系统</CardTitle>
-                <CardDescription>全栈电商解决方案</CardDescription>
+                <CardTitle className="text-xl">视觉引导机器人码垛</CardTitle>
+                <CardDescription>智能仓储物流自动化解决方案</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground text-sm">
-                  一个功能完整的电商平台，包含用户管理、商品管理、购物车、订单系统、支付集成等核心功能。
+                  基于3D视觉引导的机器人自动码垛系统，实现纸箱/袋装物料的精准识别、姿态估计与最优码放路径规划，支持混码、拆码及多SKU动态调度。
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Next.js</Badge>
-                  <Badge variant="outline">Node.js</Badge>
-                  <Badge variant="outline">PostgreSQL</Badge>
-                  <Badge variant="outline">Stripe</Badge>
+                  <Badge variant="outline">Mech-Eye</Badge>
+                  <Badge variant="outline">Mech-Vision</Badge>
+                  <Badge variant="outline">C++</Badge>
+                  <Badge variant="outline">Python</Badge>
+                  <Badge variant="outline">ROS</Badge>
+                  <Badge variant="outline">ABB</Badge>
                 </div>
                 <div className="flex gap-3 pt-2">
                   <Button size="sm" variant="outline" className="gap-2">
@@ -179,18 +196,20 @@ export default function Home() {
             {/* Project 2 */}
             <Card className="border-none shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader>
-                <CardTitle className="text-xl">任务管理应用</CardTitle>
-                <CardDescription>团队协作工具</CardDescription>
+                <CardTitle className="text-xl">机器人无序抓取工件上下料</CardTitle>
+                <CardDescription>Bin Picking智能制造核心应用</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground text-sm">
-                  一个现代化的任务管理应用，支持团队协作、任务分配、进度跟踪、实时通知等功能。
+                  针对深筐散乱堆叠工件的3D视觉引导抓取系统，集成碰撞检测、抓取姿态生成与运动规划算法，实现CNC机床、压铸机的全自动上下料。
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">React</Badge>
-                  <Badge variant="outline">TypeScript</Badge>
-                  <Badge variant="outline">MongoDB</Badge>
-                  <Badge variant="outline">Socket.io</Badge>
+                  <Badge variant="outline">Photoneo</Badge>
+                  <Badge variant="outline">HALCON</Badge>
+                  <Badge variant="outline">Cognex Deep Learning</Badge>
+                  <Badge variant="outline">C#</Badge>
+                  <Badge variant="outline">WPF</Badge>
+                  <Badge variant="outline">KUKA</Badge>
                 </div>
                 <div className="flex gap-3 pt-2">
                   <Button size="sm" variant="outline" className="gap-2">
@@ -208,18 +227,20 @@ export default function Home() {
             {/* Project 3 */}
             <Card className="border-none shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader>
-                <CardTitle className="text-xl">数据可视化仪表板</CardTitle>
-                <CardDescription>数据分析平台</CardDescription>
+                <CardTitle className="text-xl">视觉引导定位装配</CardTitle>
+                <CardDescription>高精度装配对位系统</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground text-sm">
-                  一个交互式数据可视化仪表板，支持多种图表类型、实时数据更新、自定义报表导出。
+                  亚毫米级精度的2D/3D视觉定位系统，用于汽车零部件、3C电子等精密装配场景，实现销孔对位、轴孔装配、贴合对位等复杂工艺。
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Vue.js</Badge>
-                  <Badge variant="outline">D3.js</Badge>
-                  <Badge variant="outline">Python</Badge>
-                  <Badge variant="outline">FastAPI</Badge>
+                  <Badge variant="outline">Basler</Badge>
+                  <Badge variant="outline">Cognex VisionPro</Badge>
+                  <Badge variant="outline">VisionMaster</Badge>
+                  <Badge variant="outline">C++</Badge>
+                  <Badge variant="outline">Qt</Badge>
+                  <Badge variant="outline">EtherCAT</Badge>
                 </div>
                 <div className="flex gap-3 pt-2">
                   <Button size="sm" variant="outline" className="gap-2">
@@ -237,18 +258,20 @@ export default function Home() {
             {/* Project 4 */}
             <Card className="border-none shadow-md hover:shadow-xl transition-all hover:-translate-y-1">
               <CardHeader>
-                <CardTitle className="text-xl">博客系统</CardTitle>
-                <CardDescription>个人博客平台</CardDescription>
+                <CardTitle className="text-xl">视觉引导钢板加工</CardTitle>
+                <CardDescription>重工业板材智能分拣与切割</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4">
                 <p className="text-muted-foreground text-sm">
-                  一个支持Markdown编辑、代码高亮、评论系统、RSS订阅的现代博客平台。
+                  大型钢板/型材的3D视觉识别与引导系统，支持激光切割、等离子切割、坡口加工等工艺，实现来料定位、余料管理、切割路径优化与自动分拣。
                 </p>
                 <div className="flex flex-wrap gap-2">
-                  <Badge variant="outline">Next.js</Badge>
-                  <Badge variant="outline">MDX</Badge>
-                  <Badge variant="outline">Prisma</Badge>
-                  <Badge variant="outline">Vercel</Badge>
+                  <Badge variant="outline">Hikrobot</Badge>
+                  <Badge variant="outline">Mech-DLK</Badge>
+                  <Badge variant="outline">OpenCV</Badge>
+                  <Badge variant="outline">Python</Badge>
+                  <Badge variant="outline">Modbus</Badge>
+                  <Badge variant="outline">Docker</Badge>
                 </div>
                 <div className="flex gap-3 pt-2">
                   <Button size="sm" variant="outline" className="gap-2">
@@ -279,7 +302,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <Mail className="w-8 h-8 mx-auto mb-3 text-primary" />
                 <h3 className="font-semibold mb-2">邮箱</h3>
-                <p className="text-sm text-muted-foreground">example@email.com</p>
+                <p className="text-sm text-muted-foreground">h15296356826@126.com</p>
               </CardContent>
             </Card>
             
@@ -287,7 +310,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <Github className="w-8 h-8 mx-auto mb-3 text-primary" />
                 <h3 className="font-semibold mb-2">GitHub</h3>
-                <p className="text-sm text-muted-foreground">@username</p>
+                <p className="text-sm text-muted-foreground">@alexH-maker</p>
               </CardContent>
             </Card>
             
@@ -295,7 +318,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <Linkedin className="w-8 h-8 mx-auto mb-3 text-primary" />
                 <h3 className="font-semibold mb-2">LinkedIn</h3>
-                <p className="text-sm text-muted-foreground">张三</p>
+                <p className="text-sm text-muted-foreground">黄海宁</p>
               </CardContent>
             </Card>
           </div>
@@ -309,8 +332,8 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 text-center text-muted-foreground text-sm">
-        <p>© 2024 张三. All rights reserved.</p>
-        <p className="mt-2">用 ❤️ 和 Next.js 构建</p>
+        <p>© 2026 黄海宁. All rights reserved.</p>
+        <p className="mt-2">用 Next.js 构建</p>
       </footer>
     </div>
   );
