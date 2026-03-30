@@ -19,7 +19,7 @@ export default function Home() {
           
           <div className="space-y-4">
             <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary via-primary/80 to-primary/60 bg-clip-text text-transparent">
-              你好，我是黄海宁
+              你好，我是HainingHuang
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl">
               机器人视觉工程师 / 技术爱好者 / 视觉工程应用
@@ -318,7 +318,7 @@ export default function Home() {
               <CardContent className="pt-6">
                 <Linkedin className="w-8 h-8 mx-auto mb-3 text-primary" />
                 <h3 className="font-semibold mb-2">LinkedIn</h3>
-                <p className="text-sm text-muted-foreground">黄海宁</p>
+                <p className="text-sm text-muted-foreground">HN Huang</p>
               </CardContent>
             </Card>
           </div>
@@ -332,7 +332,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 text-center text-muted-foreground text-sm">
-        <p>© 2026 黄海宁. All rights reserved.</p>
+        <p>© 2026 HN Huang. All rights reserved.</p>
         <p className="mt-2">用 Next.js 构建</p>
       </footer>
     </div>
